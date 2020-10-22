@@ -10,8 +10,11 @@
         props: {
             msg: String
         },
+        created() {
+            //console.log($);
+        },
         mounted() {
-            this.test();
+          this.test();
         },
         methods: {
             test() {
