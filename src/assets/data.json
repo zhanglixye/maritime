@@ -1,0 +1,107 @@
+{
+    "nodes": [
+        {
+            "id": "0",
+            "name": "海和",
+            "itemStyle": {
+                "normal": {
+                    "color": "rgb(255,0,0)"
+                }
+            },
+            "symbolSize": 60,
+            "x": -266.82776,
+            "y": 299.6904,
+            "attributes": {
+                "modularity_class": 0
+            }
+        },
+        {
+            "id": "1",
+            "name": "理工",
+            "itemStyle": {
+                "normal": {
+                    "color": "rgb(0,255,0)"
+                }
+            },
+            "symbolSize": 60,
+            "x": -418.08344,
+            "y": 446.8853,
+            "attributes": {
+                "modularity_class": 1
+            }
+        },
+        {
+            "id": "2",
+            "name": "医药",
+            "itemStyle": {
+                "normal": {
+                    "color": "rgb(0,0,255)"
+                }
+            },
+            "symbolSize": 60,
+            "x": -212.76357,
+            "y": 245.29176,
+            "attributes": {
+                "modularity_class": 2
+            }
+        }
+    ],
+    "links": [
+        {
+            "id": "2",
+            "name": "111",
+            "source": "1",
+            "target": "0",
+            "lineStyle": {
+                "normal": {},
+                "color": "#ff0000"
+            }
+        },
+        {
+            "id": "2",
+            "name": null,
+            "source": "2",
+            "target": "0",
+            "lineStyle": {
+                "normal": {},
+                "color": "#00ff00"
+            }
+        },
+        {
+            "id": "2",
+            "name": null,
+            "source": "1",
+            "target": "2",
+            "lineStyle": {
+                "normal": {}
+            }
+        },
+        {
+            "id": "3",
+            "name": null,
+            "source": "2",
+            "target": "1",
+            "lineStyle": {
+                "normal": {}
+            }
+        },
+        {
+            "id": "4",
+            "name": null,
+            "source": "0",
+            "target": "2",
+            "lineStyle": {
+                "normal": {}
+            }
+        },
+        {
+            "id": "4",
+            "name": null,
+            "source": "0",
+            "target": "1",
+            "lineStyle": {
+                "normal": {}
+            }
+        }
+    ]
+}
