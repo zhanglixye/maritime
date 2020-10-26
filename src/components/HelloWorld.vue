@@ -19,6 +19,8 @@
         methods: {
             test() {
                 let dom = document.getElementById('container');
+                //let json = require('../assets/dark.project.json');
+                //this.$echarts.registerTheme('westeros', json);
                 let myChart = this.$echarts.init(dom);
                 //let app = {};
                 let option = null;
