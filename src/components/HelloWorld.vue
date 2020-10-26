@@ -1,5 +1,5 @@
 <template>
-    <div id="hello">
+    <div id="container">
         {{msg}}
     </div>
 </template>
@@ -18,13 +18,13 @@
         },
         methods: {
             test() {
-                let myChart = this.$echarts.init(document.getElementById('hello'));
+                let dom = document.getElementById('container');
+                let myChart = this.$echarts.init(dom);
                 //let app = {};
                 let option = null;
                 myChart.showLoading();
-                let les = require('../assets/hecore');
+                let graph = require('../assets/hecore');
                 myChart.hideLoading();
-                var graph = les;
                 var categories = [];
                 for (var i = 0; i < 9; i++) {
                     categories[i] = {
@@ -88,7 +88,6 @@
                         }
                     ]
                 };
-
                 myChart.setOption(option);
                 if (option && typeof option === "object") {
                     myChart.setOption(option, true);
@@ -100,7 +99,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    #hello {
+    #container {
         width: 1000px;
         height: 1000px;
     }
