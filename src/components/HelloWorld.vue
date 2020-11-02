@@ -19,13 +19,14 @@
         methods: {
             test() {
                 let dom = document.getElementById('container');
-                //let json = require('../assets/dark.project.json');
-                //this.$echarts.registerTheme('westeros', json);
+                //echarts init()
                 let myChart = this.$echarts.init(dom);
-                //let app = {};
                 let option = null;
+                //showLoading
                 myChart.showLoading();
+                //引入json
                 let graph = require('../assets/hecore');
+                //hideLoading
                 myChart.hideLoading();
                 var categories = [];
                 for (var i = 0; i < 9; i++) {
