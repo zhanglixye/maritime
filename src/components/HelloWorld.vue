@@ -1,6 +1,9 @@
 <template>
-    <div id="container">
-        {{msg}}
+    <div>
+        <div id="container">
+            {{msg}}
+        </div>
+        <input type="range" @input="getValue" min="0" max="1" step="0.1">
     </div>
 </template>
 
@@ -95,6 +98,10 @@
                 if (option && typeof option === "object") {
                     myChart.setOption(option, true);
                 }
+            },
+            getValue(event){
+                let value = $(event.target).val();
+                console.log(value);
             }
         }
     }
